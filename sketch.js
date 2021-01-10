@@ -66,6 +66,14 @@ function draw() {
   drawSprites();
  
 }
+function keyPressed() {
+  if (keyCode === UP_ARROW) {
+
+    Matter.Body.applyForce(bob4.body,bob4.body.position,{x:85,y:-85});
+  
+  }
+}
+
 
 
 
